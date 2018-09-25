@@ -1,0 +1,46 @@
+﻿前4列：特征；         后1列：结果
+特征数据：data = []
+聚类数据：cluster_location =[]
+
+
+
+==========fuzzy2代码说明===============
+
+Import_data函数：加载数据
+	返回特征值的列表data，聚类结果clust
+
+randomise函数：
+	随机化数据，记录随机数据order_list
+
+ori_order函数：
+	原始数据ori_data
+
+print_mat函数：
+	打印矩阵中元素，按行打印 alist[i]
+
+init_Uij函数：
+	初始化隶属度，放到矩阵Uij ，簇数*1
+
+distance函数：
+	计算所有点到中心点的距离dist
+
+end函数：
+	迭代停止条件
+
+norm_Uij函数：
+	模糊化隶属度，找出最大的隶属度Uij
+
+-----------------run_fuzzy2代码说明
+
+fuzzy函数：
+	每个簇心的迭代公式，到每个簇心的距离计算公式，隶属度的迭代公式
+	返回最终隶属度Uij
+
+checker_iris函数：
+	和真实的聚类结果进行比较
+
+
+----------------
+
+运行fuzzy2和run_fuzzy2的代码，得到结果。
+

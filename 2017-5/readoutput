@@ -1,0 +1,25 @@
+python3.6:
+pip list
+pip install --upgrade pip
+pip install numpy
+
+C:\>cd pip-9.0.1
+C:\pip-9.0.1>python3 setup.py install
+再次删除新生的pip.exe
+
+python2.7:
+python2 -m pip list 查看
+python3 -m pip install --upgrade pip 更新
+python2 -m pip install numpy 安装
+
+
+
+
+
+
+正常的爬虫：发请求，得到响应，解析数据，后续处理等等
+启动monggoDB:  cmd，进入mongoDB的bin文件，F:\mongoDB\bin,   mongod --dbpath F:\mongoDB\bin\data\db命令。
+输出结果到文件： cmd进入目录，python<代码名.py>文件名.txt
+
+
+F:\pycharm\python\python36;F:\pycharm\python\python36\Scripts\;

@@ -1,0 +1,28 @@
+
+
+clc
+clear
+close all
+data = importdata('data.txt');
+%data中还有第8列，正确的标签列
+[center,U,obj_fcn] = fcm(data(:,1:7),3);
+[~,label] = max(U); %找到所属的类
+subplot(1,2,1);
+gscatter(data(:,4),data(:,7),data(:,8)),title('choose:4,7列,理论结果')
+% cal accuracy
+a_1 = size(find(label(1:70)==1),2);
+a_2 = size(find(label(1:70)==2),2);
+a_3 = size(find(label(1:70)==3),2);
+a = max([a_1,a_2,a_3]);
+b_1 = size(find(label(71:140)==1),2);
+b_2 = size(find(label(71:140)==2),2);
+b_3 = size(find(label(71:140)==3),2);
+b = max([b_1,b_2,b_3]);
+c_1 = size(find(label(141:210)==1),2);
+c_2 = size(find(label(141:210)==2),2);
+c_3 = size(find(label(141:210)==3),2);
+c = max([c_1,c_2,c_3]);
+accuracy = (a+b+c)/210;
+% plot answer
+subplot(1,2,2);
+gscatter(data(:,4),data(:,7),label),title(['实际结果,accuracy=',num2str(accuracy)])

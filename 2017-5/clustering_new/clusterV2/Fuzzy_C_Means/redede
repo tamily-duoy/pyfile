@@ -1,0 +1,10 @@
+﻿
+
+
+python实现 模糊C均值聚类算法（Fuzzy-C-Means）-基于iris数据集
+python3模糊C均值聚类算法，数据集为iris，放在和代码同一目录即可。
+https://blog.csdn.net/zwqhehe/article/details/75174918
+
+
+算法原理及步骤：参考
+https://wenku.baidu.com/view/ee968c00eff9aef8941e06a2.html  

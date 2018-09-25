@@ -1,0 +1,15 @@
+
+
+clc
+clear
+close all
+data = importdata('data.txt');
+%data中还有第8列，正确的标签列
+subplot(2,2,1);
+gscatter(data(:,1),data(:,6),data(:,8)),title('choose:1,6 列')
+subplot(2,2,2);
+gscatter(data(:,2),data(:,4),data(:,8)),title('choose:2,4 列')
+subplot(2,2,3);
+gscatter(data(:,3),data(:,5),data(:,8)),title('choose:3,5 列')
+subplot(2,2,4);
+gscatter(data(:,4),data(:,7),data(:,8)),title('choose:4,7 列')

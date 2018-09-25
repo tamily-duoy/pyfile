@@ -1,0 +1,1 @@
+ scp -r ./wordcount root@211.66.96.27:/home/researcher/

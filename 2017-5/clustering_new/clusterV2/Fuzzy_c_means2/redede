@@ -1,0 +1,18 @@
+
+3. FCM 算法计算过程
+由于聚类中心和隶属度两个必要条件的存在，FCM 算法的可以表示为一个简单的迭代过程。将 n 个拥有 m 个属性的对象构建成一个 n\times m 的矩阵记为 D，FCM 的算法可以描述为：
+
+输入：隶属度加权指数 m，数据矩阵 D，聚类的个数 k，最大迭代次数 iterMax，阈值 threshold。
+输出：隶属度矩阵 U
+算法过程：
+Step1: 用区间 [0,1] 内的满足 (1) 式的随机数初始化隶属度矩阵，记为 D^{(0)}。初始化迭代计数器 iterCounter。
+Step2: 根据 (3) 式和 U^{(iterCounter)} 计算 k 个聚类中心，记做 C^{(iterCounter)}。
+Step3: 根据 (2) 式计算目标函数的值。如果本次迭代的目标函数值与上一次计算的目标函数值之差小于 threshold 或者迭代计数器 iterCounter 大于等于 iterMax 那么迭代结束，输出结果，算法停止。
+Step4: 依据 C^{(iterCounter)} 和 (4) 式计算 U^{(iterCounter+1)}，iterCounter++ ，返回Step2
+
+
+
+
+
+
+http://note4code.com/2015/04/14/fuzzy-c-means-%E7%AE%97%E6%B3%95%E5%8F%8A%E5%85%B6-python-%E5%AE%9E%E7%8E%B0/

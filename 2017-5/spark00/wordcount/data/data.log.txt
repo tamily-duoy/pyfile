@@ -1,0 +1,13 @@
+[INFO] 2016-05-17 15:27:23,202 - root - evolve - init population...
+[DEBUG] 2016-05-17 15:27:23,203 - root - create_initial_population - create
+initial pupulation
+[DEBUG] 2016-05-17 15:27:23,203 - root - create_initial_population - create
+initial individual NO.0001
+[DEBUG] 2016-05-17 15:27:23,203 - root - generateIndividual -
+generateIndividual - sample_idx
+...
+[DEBUG] 2016-05-17 15:27:34,544 - root - create_initial_population - create
+initial individual NO.0007
+[DEBUG] 2016-05-17 15:27:34,545 - root - generateIndividual -
+generateIndividual - sample_idx
+...

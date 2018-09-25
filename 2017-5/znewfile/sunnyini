@@ -1,0 +1,16 @@
+[F1]
+Cpsdb1_ip=10.107.96.213
+Cpsdb1_port=3306
+Cpsdb1_user=fannyyin
+Cpsdb1_pswd=fannyyin@123
+
+Cpsdb2_ip=10.107.96.216
+Cpsdb2_port=3306
+Cpsdb2_user=fannyyin
+Cpsdb2_pswd=fannyyin@123
+
+
+Padmdb_ip=10.107.96.220
+Padmdb_port=3306
+Padmdb_user=fannyyin
+Padmdb_pswd=fannyyin@123
